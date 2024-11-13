@@ -2,10 +2,9 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
-    background: linear-gradient(135deg, #ffffff 30%, #008000 100%);
+    background: linear-gradient(135deg, #ffffff 30%, #a8d5ba 100%); /* Vert pastel */
     background-attachment: fixed;
     position: relative;
     overflow-x: hidden;
@@ -18,7 +17,7 @@ body::before {
     left: -150px;
     width: 400px;
     height: 400px;
-    background: rgba(255, 215, 0, 0.2); /* Cercle doré translucide */
+    background: rgba(212, 175, 55, 0.15); /* Cercle doré translucide */
     border-radius: 50%;
     z-index: 0;
     animation: float 6s ease-in-out infinite;
@@ -31,28 +30,10 @@ body::after {
     right: -150px;
     width: 400px;
     height: 400px;
-    background: rgba(0, 128, 0, 0.2); /* Cercle vert translucide */
+    background: rgba(47, 79, 79, 0.2); /* Cercle vert foncé translucide */
     border-radius: 50%;
     z-index: 0;
     animation: float-reverse 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-}
-
-@keyframes float-reverse {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
 }
 
 /* ---------------- Header Navigation Bar ---------------- */
@@ -63,7 +44,7 @@ header {
     align-items: center;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
     height: 70px;
-    background-color: rgba(255, 255, 255, 0.9); /* Transparence pour voir l'arrière-plan */
+    background-color: rgba(255, 250, 240, 0.9); /* Blanc crème */
     backdrop-filter: blur(5px);
     z-index: 10;
 }
@@ -85,20 +66,20 @@ header img:hover {
 
 .main-nav a {
     font-size: 18px;
-    color: #333;
+    color: #2f4f4f; /* Vert sapin pour les liens */
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .main-nav a:hover {
-    color: #008000; /* Vert Longrich */
+    color: #d4af37; /* Or pâle */
     transform: scale(1.05);
 }
 
 #selected {
-    color: #008000;
-    border-bottom: 2px solid #FFD700;
+    color: #2f4f4f;
+    border-bottom: 2px solid #d4af37;
     padding-bottom: 5px;
 }
 
@@ -109,7 +90,7 @@ header img:hover {
     margin: 100px auto;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 250, 240, 0.8); /* Blanc crème */
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
@@ -119,18 +100,18 @@ header img:hover {
 
 #intro h1 {
     font-size: 42px;
-    color: #008000;
+    color: #006400; /* Vert foncé */
     margin-bottom: 20px;
 }
 
 #intro p {
     font-size: 18px;
-    color: #555;
+    color: #333;
     margin-bottom: 30px;
 }
 
 #intro a {
-    background-color: #008000;
+    background-color: #006400; /* Vert foncé */
     color: white;
     padding: 12px 30px;
     font-size: 20px;
@@ -142,7 +123,7 @@ header img:hover {
 }
 
 #intro a:hover {
-    background-color: #006400;
+    background-color: #004d33; /* Vert plus foncé au survol */
     cursor: pointer;
     transform: translateY(-5px);
 }
@@ -163,7 +144,7 @@ header img:hover {
 
 .product-nav a,
 main a {
-    color: #008000;
+    color: #006400; /* Vert pour les liens */
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -171,7 +152,7 @@ main a {
 
 .product-nav a:hover,
 main a:hover {
-    color: #FFD700;
+    color: #d4af37; /* Or pour le survol */
 }
 
 #product-intro {
@@ -200,7 +181,7 @@ main a:hover {
 
 /* ---------------- Footer ---------------- */
 footer {
-    background-color: #008000;
+    background-color: #2f4f4f; /* Vert sapin */
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -209,14 +190,14 @@ footer {
 }
 
 footer a {
-    color: #FFD700;
+    color: #d4af37; /* Or pâle */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #FFFACD;
+    color: #fffacd; /* Crème clair */
     text-decoration: underline;
 }
 
