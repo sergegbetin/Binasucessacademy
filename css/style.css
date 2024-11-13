@@ -4,7 +4,7 @@ body {
     margin: 0;
     color: #333;
     line-height: 1.6;
-    background: linear-gradient(135deg, #ffffff 30%, #a8d5ba 100%); /* Vert pastel */
+    background: linear-gradient(135deg, #ffffff 30%, #a8d5ba 100%);
     background-attachment: fixed;
     position: relative;
     overflow-x: hidden;
@@ -17,7 +17,7 @@ body::before {
     left: -150px;
     width: 400px;
     height: 400px;
-    background: rgba(212, 175, 55, 0.15); /* Cercle doré translucide */
+    background: rgba(212, 175, 55, 0.15);
     border-radius: 50%;
     z-index: 0;
     animation: float 6s ease-in-out infinite;
@@ -30,7 +30,7 @@ body::after {
     right: -150px;
     width: 400px;
     height: 400px;
-    background: rgba(47, 79, 79, 0.2); /* Cercle vert foncé translucide */
+    background: rgba(47, 79, 79, 0.2);
     border-radius: 50%;
     z-index: 0;
     animation: float-reverse 6s ease-in-out infinite;
@@ -44,7 +44,7 @@ header {
     align-items: center;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
     height: 70px;
-    background-color: rgba(255, 250, 240, 0.9); /* Blanc crème */
+    background-color: rgba(255, 250, 240, 0.9);
     backdrop-filter: blur(5px);
     z-index: 10;
 }
@@ -66,14 +66,14 @@ header img:hover {
 
 .main-nav a {
     font-size: 18px;
-    color: #2f4f4f; /* Vert sapin pour les liens */
+    color: #2f4f4f;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .main-nav a:hover {
-    color: #d4af37; /* Or pâle */
+    color: #d4af37;
     transform: scale(1.05);
 }
 
@@ -87,10 +87,10 @@ header img:hover {
 #intro {
     display: flex;
     width: 80%;
-    margin: 100px auto;
+    margin: 80px auto;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 250, 240, 0.8); /* Blanc crème */
+    background-color: rgba(255, 250, 240, 0.8);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
@@ -100,7 +100,7 @@ header img:hover {
 
 #intro h1 {
     font-size: 42px;
-    color: #006400; /* Vert foncé */
+    color: #006400;
     margin-bottom: 20px;
 }
 
@@ -111,7 +111,7 @@ header img:hover {
 }
 
 #intro a {
-    background-color: #006400; /* Vert foncé */
+    background-color: #006400;
     color: white;
     padding: 12px 30px;
     font-size: 20px;
@@ -123,7 +123,7 @@ header img:hover {
 }
 
 #intro a:hover {
-    background-color: #004d33; /* Vert plus foncé au survol */
+    background-color: #004d33;
     cursor: pointer;
     transform: translateY(-5px);
 }
@@ -144,7 +144,7 @@ header img:hover {
 
 .product-nav a,
 main a {
-    color: #006400; /* Vert pour les liens */
+    color: #006400;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -152,7 +152,7 @@ main a {
 
 .product-nav a:hover,
 main a:hover {
-    color: #d4af37; /* Or pour le survol */
+    color: #d4af37;
 }
 
 #product-intro {
@@ -181,7 +181,7 @@ main a:hover {
 
 /* ---------------- Footer ---------------- */
 footer {
-    background-color: #2f4f4f; /* Vert sapin */
+    background-color: #2f4f4f;
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -190,14 +190,14 @@ footer {
 }
 
 footer a {
-    color: #d4af37; /* Or pâle */
+    color: #d4af37;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #fffacd; /* Crème clair */
+    color: #fffacd;
     text-decoration: underline;
 }
 
@@ -206,15 +206,17 @@ footer a:hover {
     #intro {
         flex-direction: column;
         text-align: center;
+        padding: 30px;
     }
 
     #intro h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     #product-intro {
         flex-direction: column;
         align-items: center;
+        gap: 20px 0;
     }
 
     .product-card {
@@ -230,14 +232,21 @@ footer a:hover {
     .main-nav {
         flex-direction: column;
         align-items: center;
+        row-gap: 15px;
     }
 
     #intro {
         width: 90%;
+        margin: 60px auto;
     }
 
     footer {
         font-size: 16px;
+    }
+
+    body::before, body::after {
+        width: 250px;
+        height: 250px;
     }
 }
 
